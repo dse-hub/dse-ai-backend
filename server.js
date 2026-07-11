@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const API_KEY = process.env.GEMINI_API_KEY;
 const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || '*'; // 生產環境請改成你的網站網域，例如 https://your-site.com
-const DEFAULT_MODEL = 'gemini-2.5-flash'; // 免費額度較充裕的模型，可視需要改成其他 gemini 模型
+const DEFAULT_MODEL = 'gemini-3.5-flash'; // 目前穩定可用、有免費額度的模型
 
 if (!API_KEY) {
   console.warn('警告：尚未設定 GEMINI_API_KEY 環境變數，/api/chat 將無法正常運作。');
